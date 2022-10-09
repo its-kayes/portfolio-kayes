@@ -21,10 +21,10 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function Banner() {
   return (
     <Box
-      className="h-screen"
-      bgcolor="#0A182E"
+      className="h-screen bg-bg"
+      // bgcolor={bg}
       marginTop={3}
-      sx={{ flexGrow: 1, backgroundImage: Profile }}
+      sx={{ flexGrow: 1, backgroundImage: Profile, bgcolor: "bg" }}
     >
       <Grid
         container
@@ -37,7 +37,7 @@ export default function Banner() {
           <Box>
             <h1 className={style.header1}> Hello! </h1>
             <h1 className={style.header2}> This is Emrul Kayes </h1>
-            <Box pt={1} ml={1} className="text-xl font-semibold text-sky-400 ">
+            <Box pt={1} ml={1} className="text-xl font-semibold text-secondary">
               <Typical
                 steps={[
                   "Software Engineer",
@@ -64,12 +64,13 @@ export default function Banner() {
             </Box>
             <a
               href="resume.pdf"
-              className=" flex items-center w-1/4 justify-evenly ml-3 py-3 rounded-lg border-2 text-[#4AB9A7] font-semibold border-sky-300 normal-case hover:text-black hover:bg-sky-100"
+              className=" flex items-center w-1/4 justify-evenly ml-2 py-3 rounded-lg border-2 text-buttonText font-semibold border-secondary normal-case hover:text-black hover:bg-buttonBg"
               download
             >
               {" "}
               <i>Download Resume</i> <CloudDownloadIcon />
             </a>
+            {/* <h1 className=""> check </h1> */}
           </Box>
         </Grid>
         <Grid display="flex" justifyContent="center" item xs={8}>
