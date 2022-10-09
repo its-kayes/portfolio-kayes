@@ -1,10 +1,12 @@
+import { ReactNode } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
+interface LayoutProps {
+  children: ReactNode;
+}
 
-// children: any;
-
-export default function Layout({ children }) {
+export default function Layout({ children }: LayoutProps) {
   return (
     <div>
       <Navbar />
@@ -13,19 +15,3 @@ export default function Layout({ children }) {
     </div>
   );
 }
-
-
-// import Footer from "./Footer";
-// import Navbar from "./Navbar";
-
-// const Layout = ({ children:any }) => {
-//     return (
-//         <div className="bg-primary">
-//             <Navbar />
-//             {children}
-//             <Footer />
-//         </div>
-//     )
-// }
-
-// export default Layout;

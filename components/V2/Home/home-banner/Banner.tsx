@@ -3,10 +3,12 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import { Button } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import style from "../../../../styles/V2/Home/HomeBanner.module.css";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import Typical from "react-typical";
+import { url } from "inspector";
+import Profile from "../../../../public/profile.jpg";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -22,7 +24,7 @@ export default function Banner() {
       className="h-screen"
       bgcolor="#0A182E"
       marginTop={3}
-      sx={{ flexGrow: 1 }}
+      sx={{ flexGrow: 1, backgroundImage: Profile }}
     >
       <Grid
         container
@@ -35,7 +37,7 @@ export default function Banner() {
           <Box>
             <h1 className={style.header1}> Hello! </h1>
             <h1 className={style.header2}> This is Emrul Kayes </h1>
-            <Box className="pt-3 ml-3 text-xl font-semibold text-sky-400 ">
+            <Box pt={1} ml={1} className="text-xl font-semibold text-sky-400 ">
               <Typical
                 steps={[
                   "Software Engineer",
