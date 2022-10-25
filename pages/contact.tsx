@@ -6,6 +6,9 @@ import emailjs from "emailjs-com";
 // import "@fontsource/amiri";
 import { SiMinutemailer } from "react-icons/si";
 import { HiOutlineDownload } from "react-icons/hi";
+import { BiPhoneCall } from "react-icons/bi";
+import { IoIosMailOpen } from "react-icons/io";
+import { FaRegAddressCard } from "react-icons/fa";
 
 const ContactMe = () => {
   const {
@@ -55,17 +58,20 @@ const ContactMe = () => {
         <p className=" mb-14 text-6xl font-bold ">
           <i> Contact Me </i>
         </p>
-        <div className="flex text-xl text-[#8892B0] items-center mb-6">
+        <div className="flex items-center text-xl text-[#8892B0]  mb-6">
           {/* <i className="fa-solid fa-phone-volume"></i> */}
           {/* <FontAwesomeIcon icon="fa-solid fa-phone" /> */}
-          <p className="px-3 font-sans  font-semibold">+8801793439379</p>
+          <BiPhoneCall />
+          <p className="px-3 mb-1 font-sans font-semibold">+8801793439379</p>
         </div>
         <div className="flex text-xl text-[#8892B0] items-center mt-6">
-          <i className="fa-solid fa-envelope-open-text"></i>
+          {/* <i className="fa-solid fa-envelope-open-text"></i> */}
+          <IoIosMailOpen />
           <p className="px-3 font-sans  font-semibold">kayes.ek8@gmail.com</p>
         </div>
         <div className="flex text-xl text-[#8892B0] items-center my-6">
-          <i className="fa-solid fa-location-dot"></i>
+          {/* <i className="fa-solid fa-location-dot"></i> */}
+          <FaRegAddressCard />
           <p className="px-3 font-sans  font-semibold">
             1230 Uttara, Dhaka-Bangladesh
           </p>
