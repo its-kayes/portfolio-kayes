@@ -18,5 +18,5 @@ module.exports = {
       borderColor: "#7DD3FC",
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
