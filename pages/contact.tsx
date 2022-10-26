@@ -1,16 +1,11 @@
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
-// import { FontAwesomeIcon } from "font-awesome";
-// import { ToastContainer, toast } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.min.css";
-// import "@fontsource/amiri";
 import { SiMinutemailer } from "react-icons/si";
 import { HiOutlineDownload } from "react-icons/hi";
 import { BiPhoneCall } from "react-icons/bi";
 import { IoIosMailOpen } from "react-icons/io";
 import { FaRegAddressCard } from "react-icons/fa";
 import style from "../styles/V2/Contact/Contact.module.css";
-// import { amiri } from "../styles/V2/Contact/Contact.module.css";
 
 const ContactMe = () => {
   const {
@@ -24,7 +19,6 @@ const ContactMe = () => {
 
   // Function called on submit that uses emailjs to send email of valid contact form
   const onSubmit = async (data: any) => {
-    // Destrcture data object
     const { name, email, subject, message } = data;
     try {
       const templateParams = {
@@ -48,7 +42,6 @@ const ContactMe = () => {
       );
 
       reset();
-      // toastifySuccess();
     } catch (e) {
       console.log(e);
     }
@@ -61,33 +54,26 @@ const ContactMe = () => {
           <i> Contact Me </i>
         </p>
         <div className="flex items-center text-xl text-[#8892B0]  mb-6">
-          {/* <i className="fa-solid fa-phone-volume"></i> */}
-          {/* <FontAwesomeIcon icon="fa-solid fa-phone" /> */}
           <BiPhoneCall />
           <p className="px-3 mb-1 font-sans font-semibold">+8801793439379</p>
         </div>
         <div className="flex text-xl text-[#8892B0] items-center mt-6">
-          {/* <i className="fa-solid fa-envelope-open-text"></i> */}
           <IoIosMailOpen />
           <p className="px-3 font-sans  font-semibold">kayes.ek8@gmail.com</p>
         </div>
         <div className="flex text-xl text-[#8892B0] items-center my-6">
-          {/* <i className="fa-solid fa-location-dot"></i> */}
           <FaRegAddressCard />
           <p className="px-3 font-sans  font-semibold">
-            1230 Uttara, Dhaka-Bangladesh
+            Uttara, Dhaka - 1230 Bangladesh
           </p>
         </div>
-        <p className="text-[#b7bccb] font-semibold text-xl amiri">
-          For Collaboration or Team Work
-        </p>
-        {/* <p className=" text-[#b7bccb] font-semibold text-xl">
-          Feel free to contact with me or drop your valuable word.
-        </p> */}
-        <p className={style.glory}>
-          Contact me at your convenience or leave some wise advice.
-        </p>
-        <div className="mt-10">
+        <div className="py-3">
+          <p className={style.contactDetails}>For Collaboration or Team Work</p>
+          <p className={style.contactDetails}>
+            Contact me at your convenience or leave some wise advice.
+          </p>
+        </div>
+        <div className="mt-8">
           <a
             href="resume.pdf"
             className="btn border-2 text-[#4AB9A7] bg-[#0A182E] font-semibold border-[#7DD3FC] normal-case hover:text-black hover:bg-[#7DD3FC]"
@@ -103,7 +89,6 @@ const ContactMe = () => {
           <div className="row">
             <div className="text-center">
               <div className="contactForm rounded-2xl bg-[#1F2937]">
-                {/* <div className='contactForm m-10 rounded-2xl bg-[#030f27]'> */}
                 <form
                   className="p-20"
                   id="contact-form"
@@ -113,7 +98,6 @@ const ContactMe = () => {
                   <h1 className=" xl:text-5xl text-xl font-bold text-center py-4">
                     <i> be with me... </i>
                   </h1>
-                  {/* <h1 className='text-4xl text-yellow-300 mt-8 lg:text-left  md:text-7xl kayes  font-bold mb-10 whitespace-nowrap text-center py-4'> Send Me Your Feedback  </h1> */}
                   <div className="row formRow flex">
                     <div className="col-6 py-4 mr-5 ">
                       <input
@@ -206,17 +190,13 @@ const ContactMe = () => {
                     className="submit-btn border-2 border-[#1EC08F] rounded-lg hover:bg-[#7DD3FC] hover:border-[#7DD3FC] hover:text-black hover:font-bold"
                     type="submit"
                   >
-                    {/* <i className="fa-solid fa-envelope-circle-check pr-2"></i> */}
                     <div className="flex justify-evenly items-center w-[150px]  py-2">
-                      {/* <img className="w-8 h-7" src="email-svg.svg" alt="" /> */}
                       <SiMinutemailer className="text-lg" />
                       <h1 className="font-bold uppercase"> Drop </h1>
                     </div>
                   </button>
                 </form>
               </div>
-
-              {/* <ToastContainer /> */}
             </div>
           </div>
         </div>

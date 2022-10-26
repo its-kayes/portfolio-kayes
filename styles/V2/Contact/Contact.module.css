@@ -4,8 +4,11 @@
     font-family: 'Amiri', serif;
 }
 
-.glory {
+.contactDetails {
     font-family: 'Glory', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #b7bccb;
 }
 
 .check {
