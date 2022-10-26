@@ -9,6 +9,8 @@ import { HiOutlineDownload } from "react-icons/hi";
 import { BiPhoneCall } from "react-icons/bi";
 import { IoIosMailOpen } from "react-icons/io";
 import { FaRegAddressCard } from "react-icons/fa";
+import style from "../styles/V2/Contact/Contact.module.css";
+// import { amiri } from "../styles/V2/Contact/Contact.module.css";
 
 const ContactMe = () => {
   const {
@@ -76,11 +78,14 @@ const ContactMe = () => {
             1230 Uttara, Dhaka-Bangladesh
           </p>
         </div>
-        <p className="text-[#b7bccb] font-semibold text-xl">
-          I’m currently looking for an opportunities.
+        <p className="text-[#b7bccb] font-semibold text-xl amiri">
+          For Collaboration or Team Work
         </p>
-        <p className=" text-[#b7bccb] font-semibold text-xl">
+        {/* <p className=" text-[#b7bccb] font-semibold text-xl">
           Feel free to contact with me or drop your valuable word.
+        </p> */}
+        <p className={style.glory}>
+          Contact me at your convenience or leave some wise advice.
         </p>
         <div className="mt-10">
           <a
@@ -88,7 +93,7 @@ const ContactMe = () => {
             className="btn border-2 text-[#4AB9A7] bg-[#0A182E] font-semibold border-[#7DD3FC] normal-case hover:text-black hover:bg-[#7DD3FC]"
             download
           >
-            <i className="text-[16px] pr-2"> Download Resume</i>{" "}
+            <i className="text-[16px] pr-2"> Download Resume</i>
             <HiOutlineDownload className="text-2xl" />
           </a>
         </div>

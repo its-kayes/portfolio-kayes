@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Glory&display=swap');
+
+.amiri {
+    font-family: 'Amiri', serif;
+}
+
+.glory {
+    font-family: 'Glory', sans-serif;
+}
+
+.check {
+    margin-top: 30px !important;
+}
+
+/* font-family: 'Amiri',
+serif;
+font-family: 'Glory',
+sans-serif; */
