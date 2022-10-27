@@ -14,7 +14,9 @@ module.exports = {
       buttonText: "#4AB9A7",
       buttonBg: "#E0F2FE",
       secondary: "#1DB0F8",
+      formContainer: "#1F2937",
+      borderColor: "#7DD3FC",
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
