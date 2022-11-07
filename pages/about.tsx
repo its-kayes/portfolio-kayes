@@ -15,7 +15,7 @@ export default function About() {
     <div className="bg-[#0A182E] text-[#90AFDD] h-screen flex items-center">
       <div className=" flex justify-evenly items-center">
         <div className=" w-2/4 text-center ">
-          <i className="text-6xl font-bold text-[#1EC08F]"> About Me </i>
+          <p className="text-6xl font-bold text-[#1EC08F]"> About Me </p>
           <div className="my-10">
             <div>
               <button
@@ -25,7 +25,7 @@ export default function About() {
                   setExperience(false);
                   setCourse(false);
                 }}
-                className={`text-lg cursor-pointer hover:font-bold focus:font-bold   px-8 pb-2 my-2 ${
+                className={`text-lg cursor-pointer hover:font-bold focus:font-bold px-8 pb-2 my-2 ${
                   overview && "text-[#EF4444] border-b border-[#F87171]"
                 }`}
               >

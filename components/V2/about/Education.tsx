@@ -1,7 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
-
-const Education = () => {
+export default function Education() {
   return (
     <div>
       <div>
@@ -19,6 +17,4 @@ const Education = () => {
       </div>
     </div>
   );
-};
-
-export default Education;
+}
