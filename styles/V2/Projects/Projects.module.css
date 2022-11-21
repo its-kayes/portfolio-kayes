@@ -2,7 +2,6 @@
 
 .title {
     font-family: 'Kaushan Script', cursive;
-    /* color: #292929; */
     font-size: 30px;
     line-height: 40px;
     font-weight: 400;
@@ -14,19 +13,58 @@
     font-size: 16px;
     line-height: 20px;
     font-weight: 300;
-    /* color: #90AFDD; */
     color: #72849e;
-    /* padding-top: 25px; */
     margin-top: 25px;
 }
 
 .projects {
-    padding-top: 20px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 8px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+@media screen and (max-width: 1482px) {
+    .projects {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        padding-left: 8px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .projects {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        padding-left: 8px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .projects {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        padding-left: 8px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
 }
 
 .project {
-    width: 359.975px;
-    height: 269.975px;
-    /* border-radius: 20px; */
-    /* padding: 5px; */
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    padding: 1.5%;
+    border-color: #7DD3FC;
+    border-radius: 5px;
+
 }

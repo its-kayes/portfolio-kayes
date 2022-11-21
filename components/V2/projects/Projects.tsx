@@ -13,30 +13,30 @@ export default function Projects() {
         <span className="mx-4"> Problem Solves </span>
       </div>
 
-      {/* <section className={style.projects}> */}
-      <section className="py-10 grid grid-cols-3 gap-[50px]">
+      <section className={style.projects}>
+        {/* <section className="py-10 grid grid-cols-3 justify-center items-center"> */}
         <div className={style.project}>
-          <img src="work1.jpg" alt="" />
+          <img className="w-[360px] h-[270px]" src="work1.jpg" alt="" />
         </div>
 
         <div className={style.project}>
-          <img src="work1.jpg" alt="" />
+          <img className="w-[360px] h-[270px]" src="work1.jpg" alt="" />
         </div>
 
         <div className={style.project}>
-          <img src="work1.jpg" alt="" />
+          <img className="w-[360px] h-[270px]" src="work1.jpg" alt="" />
         </div>
 
         <div className={style.project}>
-          <img src="work1.jpg" alt="" />
+          <img className="w-[360px] h-[270px]" src="work1.jpg" alt="" />
         </div>
 
         <div className={style.project}>
-          <img src="work1.jpg" alt="" />
+          <img className="w-[360px] h-[270px]" src="work1.jpg" alt="" />
         </div>
 
         <div className={style.project}>
-          <img src="work1.jpg" alt="" />
+          <img className="w-[360px] h-[270px]" src="work1.jpg" alt="" />
         </div>
       </section>
     </div>
