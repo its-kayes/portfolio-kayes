@@ -53,7 +53,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-[#0A182E] text-[#1EC08F] flex justify-evenly h-screen items-center p-20">
+    <div className="bg-[#0A182E]  text-[#1EC08F] flex justify-evenly h-screen items-center p-20">
+      {/* <div className="bg-gradient-to-r from-[#0A182E] via-[#445676] to-[#8792a2] text-[#1EC08F] flex justify-evenly h-screen items-center p-20"></div> */}
+
       <div className="">
         <p className=" mb-14 text-6xl font-bold ">
           <i> Contact Me </i>
