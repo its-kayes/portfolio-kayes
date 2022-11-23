@@ -1,5 +1,7 @@
 export default function Footer() {
   return (
-    <div> This is for footer </div>
-  )
+    <section>
+      <h1 className="text-center"> Design & Develop by Emrul Kayes </h1>
+    </section>
+  );
 }
