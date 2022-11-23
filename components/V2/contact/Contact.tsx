@@ -1,10 +1,10 @@
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
-import { SiMinutemailer } from "react-icons/si";
+import { SiMinutemailer } from "react-icons/Si";
 import { HiOutlineDownload } from "react-icons/hi";
 import { BiPhoneCall } from "react-icons/bi";
 import { IoIosMailOpen } from "react-icons/io";
-import { FaRegAddressCard } from "react-icons/fa";
+import { FaRegAddressCard } from "react-icons/Fa";
 import style from "../../../styles/V2/Contact/Contact.module.css";
 
 interface MailInfo {
