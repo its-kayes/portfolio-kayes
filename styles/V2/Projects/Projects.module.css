@@ -71,17 +71,27 @@
 .project:hover {
     transform: translateY(-12px);
     transition: all 0.4s ease 0s;
-
-    /* transform: ; */
-    /* translate: inherit; */
-    /* background-color: brown; */
-    /* transition: 2s; */
-
-
-    /* -moz-transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -o-transform: translateY(0px); */
 }
+
+
+.projectName {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #90AFDD;
+}
+
+
+
+/* .projectmodal {
+    margin: 20px 0 10px 0;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    color: #898989;
+    line-height: 12px;
+    box-shadow: inset 0 -6px 0 #fdd912;
+    -moz-box-shadow: inset 0 -6px 0 #fdd912;
+    -webkit-box-shadow: inset 0 -6px 0 #fdd912;
+} */

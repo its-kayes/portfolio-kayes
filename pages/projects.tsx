@@ -3,9 +3,8 @@ import Projects from "../components/V2/projects/Projects";
 
 export default function projects(): JSX.Element {
   return (
-    <div className="bg-[#0A182E] text-[#90AFDD] px-[10%] h-auto">
+    <div className="bg-[#0A182E] text-[#90AFDD] px-[10%] h-screen">
       <Projects />
-      {/* <FetchProjects /> */}
     </div>
   );
 }
